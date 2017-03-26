@@ -14,28 +14,28 @@
 
         <Button
             android:id="@+id/btnTabsWithText"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Tabs with text"
             android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btnTabsWithIcon"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Tabs with icon"
             android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btnTabsWithTextAndIcon"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Tabs with text and icon"
             android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btnTabsWithDifferentLayoutsActivity"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Tabs with different layouts"
             android:textAllCaps="false" />
