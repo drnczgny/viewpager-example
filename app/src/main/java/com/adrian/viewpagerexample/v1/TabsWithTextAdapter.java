@@ -1,4 +1,4 @@
-package com.adrian.viewpagerexample;
+package com.adrian.viewpagerexample.v1;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -7,26 +7,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.adrian.viewpagerexample.DataModel;
+import com.adrian.viewpagerexample.R;
+
 import java.util.List;
 
-
 /**
- * Created by cadri on 2017. 03. 25..
+ * Created by cadri on 2017. 03. 26..
  */
 
-public class CustomPagerAdapter extends PagerAdapter {
+public class TabsWithTextAdapter extends PagerAdapter {
 
-    private static final String TAG = CustomPagerAdapter.class.getName();
+    private static final String TAG = TabsWithTextAdapter.class.getName();
 
     private Context context;
+
+    private List<String> titleList;
 
     private List<DataModel> itemList;
 
     LayoutInflater layoutInflater;
 
-    public CustomPagerAdapter(Context context, List<DataModel> itemList) {
+    public TabsWithTextAdapter(Context context, List<DataModel> itemList, List<String> titleList) {
         this.context = context;
         this.itemList = itemList;
+        this.titleList = titleList;
         layoutInflater = LayoutInflater.from(context);
     }
 
@@ -58,4 +63,8 @@ public class CustomPagerAdapter extends PagerAdapter {
         return view == object;
     }
 
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return titleList.get(position);
+    }
 }

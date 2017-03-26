@@ -4,12 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.adrian.viewpagerexample.MainActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTabsWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabs with text"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTabsWithIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabs with icon"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnTabsWithTextAndIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabs with text and icon"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
 
 </LinearLayout>
 
