@@ -20,7 +20,7 @@ public class TabsWithDifferentLayoutsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tabs_with_different_layouts);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Tabs with text and icon");
+        toolbar.setTitle("Tabs with different layouts");
         setSupportActionBar(toolbar);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
