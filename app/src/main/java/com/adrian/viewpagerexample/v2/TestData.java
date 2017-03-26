@@ -1,4 +1,5 @@
-package com.adrian.viewpagerexample;
+package com.adrian.viewpagerexample.v2;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
  * Created by cadri on 2017. 03. 26..
  */
 
-public final class TestData {
+final class TestData {
 
     public static final List<DataModel> getDataModelList() {
         DataModel dataModel1 = new DataModel("ONE");
@@ -30,4 +31,5 @@ public final class TestData {
         list.add(title3);
         return list;
     }
+
 }

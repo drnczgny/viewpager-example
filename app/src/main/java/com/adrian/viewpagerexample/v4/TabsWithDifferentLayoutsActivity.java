@@ -1,4 +1,4 @@
-package com.adrian.viewpagerexample.v3;
+package com.adrian.viewpagerexample.v4;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 
 import com.adrian.viewpagerexample.R;
 
-public class TabsWithTextAndIconActivity extends AppCompatActivity {
+public class TabsWithDifferentLayoutsActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -17,14 +17,14 @@ public class TabsWithTextAndIconActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tabs_with_text_and_icon);
+        setContentView(R.layout.activity_tabs_with_different_layouts);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Tabs with text and icon");
         setSupportActionBar(toolbar);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new TabsWithTextAndIconAdapter(this, TestData.getDataModelList(), TestData.getTitleList()));
+        viewPager.setAdapter(new TabsWithDifferentLayoutsAdapter(this, TestData.getDataModelForDifferentLayoutsList(), TestData.getTitleList()));
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);

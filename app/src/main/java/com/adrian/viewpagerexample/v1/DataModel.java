@@ -1,10 +1,10 @@
-package com.adrian.viewpagerexample;
+package com.adrian.viewpagerexample.v1;
 
 /**
  * Created by cadri on 2017. 03. 26..
  */
 
-public class DataModel {
+class DataModel {
 
     private String text;
 

@@ -33,6 +33,14 @@
             android:text="Tabs with text and icon"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btnTabsWithDifferentLayoutsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabs with different layouts"
+            android:textAllCaps="false" />
+
+
     </LinearLayout>
 
 </LinearLayout>

@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.adrian.viewpagerexample.R;
-import com.adrian.viewpagerexample.TestData;
 
 public class TabsWithTextActivity extends AppCompatActivity {
 
