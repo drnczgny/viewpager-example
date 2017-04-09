@@ -2,10 +2,17 @@ package com.adrian.viewpagerexample.v4;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.adrian.viewpagerexample.R;
+import com.adrian.viewpagerexample.v4.recyclerview.RecyclerViewAdapter;
+
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -36,6 +43,14 @@ public class TabsWithDifferentLayoutsAdapter extends PagerAdapter {
         DataModel dataModelForDifferentLayouts = itemList.get(position);
 
         View itemView = layoutInflater.inflate(dataModelForDifferentLayouts.getLayoutId(), collection, false);
+
+        if(position ==3) {
+            Log.i(TAG, " most");
+            RecyclerView recyclerView = (RecyclerView) itemView.findViewById(R.id.recyclerView);
+            RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(context, Arrays.asList("one", "two", "three"));
+            recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
+            recyclerView.setAdapter(recyclerViewAdapter);
+        }
 
         collection.addView(itemView);
 

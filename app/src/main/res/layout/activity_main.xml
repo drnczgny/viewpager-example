@@ -40,7 +40,6 @@
             android:text="Tabs with different layouts"
             android:textAllCaps="false" />
 
-
     </LinearLayout>
 
 </LinearLayout>

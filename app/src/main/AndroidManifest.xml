@@ -19,7 +19,7 @@
         <activity android:name=".v1.TabsWithTextActivity" />
         <activity android:name=".v2.TabsWithIconActivity" />
         <activity android:name=".v3.TabsWithTextAndIconActivity" />
-        <activity android:name=".v4.TabsWithDifferentLayoutsActivity"></activity>
+        <activity android:name=".v4.TabsWithDifferentLayoutsActivity" />
     </application>
 
 </manifest>
